@@ -7,11 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Rutas ejemplo
-app.get('/', (req, res) => {
-  res.send('API funcionando');
-});
-
 // Rutas de usuarios
 const userRoutes = require('./routes/userRoutes');
 app.use('/api/users', userRoutes);
